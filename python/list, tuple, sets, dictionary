@@ -1,0 +1,44 @@
+my_list = ["Hello",1,[2,3],{"Name":"Parth","Age":20},1,1]
+print(f"My list is {my_list}")
+print(f"Slicing a part of list {my_list[:3]}")
+print(f"Accessing last element of list {my_list[-1]}")
+print(f"Reversing of list with different step index {my_list[-1:-5:-2]}")
+copy_list = my_list.copy()
+print(f"Copy of my list {copy_list}")
+my_list.append(4)
+print(f"Appending an element to list {my_list}")
+print(f"Popping an element at index 2 {my_list.pop(2)}")
+print(f"Counting number of 1 in the list {my_list.count(1)}")
+
+
+tup = (2,4,5,6,7,1,2,6,7,4)
+print(f"Tuple is {tup}\n")
+print(f"Accessing last element of tuple {tup[-1]}\n")
+print(f"Length of tuple {len(tup)}\n")
+print("Sorted tuple is ",sorted(tup))
+print(f"\nElement at index 4 is {tup.index(4)}\n"
+
+
+s = {"Parth","Soham","Kartika","Rahil","Vishva"}
+print(f"My set is {s}\n")
+s.add('Sriyans')
+print(f"Adding an element to set {s}\n")
+s.remove('Vishva')
+print(f"Removing an element from set {s}\n")
+college = {'D.J.Sanghvi','TSEC','VJTI','Somaiya','KIIT'}
+print(f"Union of two sets of {s} and {college} is {s.union(college)}\n")
+print(f"Sorting of the set is {sorted(s)}\n")
+cb= {'Parth','Heet','Yuvraj','Devraj','Manan','Harsh'}
+print(f"Intersection of two sets {s} and {cb} is {s.intersection(cb)}\n")
+
+
+dict = {"Name":"Parth","Age":20,"College":"D.J.Sanghvi"}
+print(f"My dictionary is {dict}\n")
+print(f"Accessing value of key 'Name' {dict['Name']}\n")
+print(f"Getting all the keys and values as list of tuples {dict.items()}\n")
+print(f"Getting all the keys as list {dict.keys()}\n")
+dict.popitem()
+print(f"Removing last key value pair {dict}\n")
+dict.update({'Age':21})
+print(f"Updating dictionary {dict}\n")
+
